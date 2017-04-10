@@ -15,7 +15,7 @@ env:
   - INTEGRATION_SPECS=1
 
 stages:
-  - "Test"
+  - "test"
   - ":shipit: to Quay.io"
 
 jobs:
