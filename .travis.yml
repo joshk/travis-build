@@ -14,13 +14,9 @@ env:
   - INTEGRATION_SPECS=0
   - INTEGRATION_SPECS=1
 
-stages:
-  - "test"
-  - ":shipit: to Quay.io"
-
 jobs:
   include:
-    - stage: "Test"
+    - stage: "test"
       sudo: required
       dist: trusty
       env:
